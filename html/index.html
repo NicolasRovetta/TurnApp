@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <script async src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script async src="/js/script.js"></script>
     <link rel="icon" href="/img/calendaricon.png" />
     <title>Turnapp</title>
 </head>
@@ -23,7 +21,7 @@
             <label for="hora">Elige un horario:</label>
             <input type="time" id="hora">
             <label for="email">Introduce tu correo electrónico:</label>
-            <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+            <input type="email" id="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
             <button id="reservar-btn">Reservar Turno</button>
         </div>
         <div id="turnos-reservados"></div>

@@ -1,6 +1,10 @@
-(function() {
-    emailjs.init("K_2_DUDsc3R2Zf_3f"); // Reemplaza "YOUR_USER_ID" con tu User ID de EmailJS
-})();
+document.addEventListener('DOMContentLoaded', function() {
+    // Asegúrate de que el SDK de EmailJS esté inicializado correctamente
+    emailjs.init("K_2_DUDsc3R2Zf_3f"); // Reemplaza con tu User ID de EmailJS
+
+    // El resto de tu código
+    console.log("EmailJS está inicializado y listo para usarse.");
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Variables del DOM

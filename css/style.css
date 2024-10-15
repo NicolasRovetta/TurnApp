@@ -1,4 +1,20 @@
-/* Estilos para la lista de turnos reservados */
+
+footer{
+    border-top: #ccc 2px solid;
+    height: 10vh;
+    text-align:center;
+      
+}
+
+main{
+    height: 90vh;
+}
+
+#reservar-btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 #turnos-reservados h2 {
     font-size: 1.5em;
     color: #333;

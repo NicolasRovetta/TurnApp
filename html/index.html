@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +12,14 @@
     <link rel="icon" href="/img/calendaricon.png" />
     <title>Turnapp</title>
 </head>
-
 <body>
     <main>
         <div id="app">
             <h1>Reserva tu Turno</h1>
             <div id="turno-form">
-                <input type="text" id="datepicker" placeholder="Selecciona una fecha"><br><br>
-                <label for="hora">Elige un horario:</label>
-                <input type="time" id="hora"><br><br>
-                <label for="email">Introduce tu correo electrónico:</label>
-                <input type="email" id="email" placeholder="correo@ejemplo.com" autocomplete="email" required><br><br>
+                <input type="text" id="datepicker" id="fecha" placeholder="Selecciona una fecha"><br><br>
+                <input type="text" id="timepicker" id="hora" placeholder="Selecciona una hora"><br><br>
+                <input type="email" id="email" placeholder="tuemail@example.com" autocomplete="email" required><br><br>
                 <button id="reservar-btn">Reservar Turno</button>
             </div>
             <div id="turnos-reservados"></div>
@@ -33,5 +29,4 @@
         <h3>DNR &#174;</h3>
     </footer>
 </body>
-
 </html>

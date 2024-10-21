@@ -9,11 +9,20 @@
       dateFormat: "Y-m-d", // Formato de la fecha
     });
   });
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    flatpickr("#timepicker", {
+      enableTime: true, // Habilita la selección de hora
+      noCalendar: true, // No muestra el calendario
+      dateFormat: "H:i", // Formato de la hora (24 horas)
+      time_24hr: true, // Usa el formato de 24 horas
+    });
+  });
 
 document.addEventListener("DOMContentLoaded", function () {
   // Variables del DOM
-  const fechaInput = document.getElementById("fecha");
-  const horaInput = document.getElementById("hora");
+  const fechaInput = document.getElementById("datepicker");
+  const horaInput = document.getElementById("timepicker");
   const emailInput = document.getElementById("email");
   const reservarBtn = document.getElementById("reservar-btn");
   const turnosReservadosDiv = document.getElementById("turnos-reservados");

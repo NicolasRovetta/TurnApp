@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"><!-- Incluye el CSS de Flatpickr -->    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script><!-- Incluye el JS de Flatpickr -->
     <script defer src="/js/script.js"></script>
     <link rel="icon" href="/img/calendaricon.png" />
     <title>Turnapp</title>
@@ -17,8 +19,7 @@
         <div id="app">
             <h1>Reserva tu Turno</h1>
             <div id="turno-form">
-                <label for="fecha">Elige una fecha:</label>
-                <input type="date" id="fecha"><br><br>
+                <input type="text" id="datepicker" placeholder="Selecciona una fecha"><br><br>
                 <label for="hora">Elige un horario:</label>
                 <input type="time" id="hora"><br><br>
                 <label for="email">Introduce tu correo electrónico:</label>
@@ -30,7 +31,7 @@
     </main>
     <footer>
         <h3>DNR &#174;</h3>
-    </footer>    
+    </footer>
 </body>
 
 </html>

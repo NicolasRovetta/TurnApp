@@ -4,6 +4,12 @@
   console.log('emailjs ejecutado!')
 })();
 
+  document.addEventListener('DOMContentLoaded', function() {
+    flatpickr("#datepicker", {
+      dateFormat: "Y-m-d", // Formato de la fecha
+    });
+  });
+
 document.addEventListener("DOMContentLoaded", function () {
   // Variables del DOM
   const fechaInput = document.getElementById("fecha");
